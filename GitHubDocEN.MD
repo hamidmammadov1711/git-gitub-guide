@@ -524,6 +524,20 @@ gh pr create --draft
 
 ---
 
+#### 14.9 Extra Professional Tips
+
+-   **Branch lifecycle policy:** keep feature branches alive no longer than 2–4 weeks. Use GitHub Actions to label stale branches automatically.
+-   **Pre-commit hooks:** enforce formatting and linting with `husky`, `pre-commit`, or Git hooks; run tests before each commit.
+-   **Require CI success before merge:** block merges on failing checks; use `branch protection` settings.
+-   **GPG-sign your commits:** add `git config --global commit.gpgSign true` for provenance and security.
+-   **Dependency update strategy:** use Dependabot or Renovate bots and review each update on its own PR.
+-   **Use issue/PR templates:** include sections such as “What/Why/How” and a checklist to standardize contributions.
+-   **Schedule `git gc` and prune:** run monthly on large repos (over 1 GB) or set up a cron job.
+-   **Use semantic tags:** tag releases (e.g. `v1.2.0`) and generate changelogs automatically.
+-   **Maintain a `QUICKSTART.md` or onboarding guide:** ensure new developers can clone and run in <10 minutes.
+-   **Enforce signed pushes on critical branches:** set `require signed commits` and `require signed pushes` in repo settings.
+
+
 ### 15. Frequent Problems and Solutions
 
 #### 🔴 CRITICAL (Data Loss Risk)

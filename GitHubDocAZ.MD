@@ -400,7 +400,7 @@ E-poçt vasitəsilə istifadəçi parol sıfırlaması funksiyasını tətbiq ed
     const API_KEY = process.env.API_KEY;
     ```
 
-- **Komandasız sırlar adasında menecerindən istifadə edin:**
+- **Komandasız sirlər adasındakı menecerindən istifadə edin:**
     - GitHub Secrets (CI/CD üçün)
     - HashiCorp Vault
     - Azure Key Vault
@@ -523,6 +523,20 @@ gh pr create --draft
     ```
 
 ---
+
+#### 14.9 Əlavə Peşəkar Tövsiyələr
+
+- **Branch ömrü siyasəti:** feature branch-ları 2–4 həftədən artıq saxlamayın. Stale branch-ları avtomatik olaraq etiketləmək üçün GitHub Actions istifadə edin.
+- **Pre-commit hook-lar:** formatlama və linting üçün `husky`, `pre-commit` və ya Git hook-larından istifadə edin; hər commitdən əvvəl testləri işə salın.
+- **Merge üçün CI uğurunu tələb edin:** uğursuz yoxlamaları olan PR-ların merge edilməsinə icazə verməyin; `branch protection` parametrlərindən istifadə edin.
+- **Commitləri GPG ilə imzala:** `git config --global commit.gpgSign true` əlavə edərək mənbə və təhlükəsizlik təmin edin.
+- **Asılılıq yeniləmə strategiyası:** Dependabot və ya Renovate avtomatlarindən istifadə edin və hər yeniləməni ayrıca PR-də gözdən keçirin.
+- **Issue/PR şablonlarından istifadə edin:** “Nə/Niyə/Necə” bölmələrini və yoxlama siyahısını daxil edin ki, töhfələr standartlaşsın.
+- **`git gc` və prune planı:** böyük repo-larda (1 GB-dan yuxarı) ayda bir və ya cron job ilə yerinə yetirin.
+- **Semantik tag-lardan istifadə edin:** buraxılışlar üçün `v1.2.0` kimi tag-lar qoyun və changelog-ları avtomatik yaradın.
+- **`QUICKSTART.md` və ya onboarding qılavuzu saxlayın:** yeni inkişafçılar 10 dəqiqədən az vaxtda clone edib işə sala bilməlidir.
+- **Kritik branch-larda imzalı push-ları tələb edin:** repo settings-də `require signed commits` və `require signed pushes` aktiv edin.
+
 
 ### 15. Tez-tez Problemlər və Həlləri
 
