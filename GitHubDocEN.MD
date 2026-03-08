@@ -119,29 +119,29 @@ git clone git@github.com:username/project-name.git
 
 ### 6. Most Commonly Used Commands (Cheat Sheet)
 
-| Command                 | Meaning                               | Frequency        |
-| ----------------------- | ------------------------------------- | ---------------- |
-| `git status`            | Current state                         | every time       |
-| `git add .`             | Stage all changes                     | most frequent    |
-| `git add file.txt`      | Stage a single file                   | —                |
-| `git commit -m "mesaj"` | Commit changes                        | most frequent    |
-| `git commit -am "mesaj"`| add + commit (tracked files)          | frequent         |
-| `git push`              | Send to GitHub                        | most frequent    |
-| `git pull`              | Fetch from GitHub                     | most frequent    |
-| `git fetch`             | See changes, but don't merge          | —                |
-| `git log --oneline`     | Commit history                        | —                |
-| `git log --graph --all` | Visual history                        | —                |
-| `git branch`            | Show branches                         | —                |
-| `git branch yeni-ozellik` | Create new branch                     | —                |
-| `git checkout yeni-ozellik` | Switch (old)                          | —                |
-| `git switch yeni-ozellik` | New command (2026 recommended)        | best practice    |
-| `git checkout -b yeni-ozellik`| Create + switch                       | most frequent    |
+| Command                   | Meaning                               | Frequency        |
+| ------------------------- | ------------------------------------- | ---------------- |
+| `git status`              | Current state                         | every time       |
+| `git add .`               | Stage all changes                     | most frequent    |
+| `git add file.txt`        | Stage a single file                   | —                |
+| `git commit -m "message"`  | Commit changes                        | most frequent    |
+| `git commit -am "message"`| add + commit (tracked files)          | frequent         |
+| `git push`                | Send to GitHub                        | most frequent    |
+| `git pull`                | Fetch from GitHub                     | most frequent    |
+| `git fetch`               | See changes, but don't merge          | —                |
+| `git log --oneline`       | Commit history                        | —                |
+| `git log --graph --all`   | Visual history                        | —                |
+| `git branch`              | Show branches                         | —                |
+| `git branch new-feature`  | Create new branch                     | —                |
+| `git checkout new-feature`| Switch (old)                          | —                |
+| `git switch new-feature`  | New command (2026 recommended)        | best practice    |
+| `git checkout -b new-feature`| Create + switch                       | most frequent    |
 | `git merge feature-branch`| Merge                                 | —                |
-| `git rebase main`       | Rebase (clean history)                | —                |
-| `git stash`             | Temporarily save changes              | —                |
-| `git stash pop`         | Restore changes                       | —                |
-| `git reset --hard HEAD~1`| Delete last commit (use with caution!)| —                |
-| `git restore fayl.txt`  | Revert a file to its previous state   | —                |
+| `git rebase main`         | Rebase (clean history)                | —                |
+| `git stash`               | Temporarily save changes              | —                |
+| `git stash pop`           | Restore changes                       | —                |
+| `git reset --hard HEAD~1` | Delete last commit (use with caution!)| —                |
+| `git restore file.txt`    | Revert a file to its previous state   | —                |
 
 ---
 

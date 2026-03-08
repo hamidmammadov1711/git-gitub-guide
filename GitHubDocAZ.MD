@@ -132,11 +132,11 @@ git clone git@github.com:istifadeci-adi/proyekt-adi.git
 | `git log --oneline` | Commit tarixçəsi | — |
 | `git log --graph --all` | Şəkilli tarixçə | — |
 | `git branch` | Branch-ləri göstər | — |
-| `git branch yeni-ozellik` | Yeni branch yarat | — |
-| `git checkout yeni-ozellik` | Switch et (köhnə) | — |
-| `git switch yeni-ozellik` | Yeni komanda (2026 tövsiyə) | ən yaxşı |
-| `git checkout -b yeni-ozellik` | Yarat + switch | ən çox |
-| `git merge feature-branch` | Merge et | — |
+| `git branch yeni-funksiyana` | Yeni branch yarat | — |
+| `git checkout yeni-funksiyana` | Switch et (köhnə) | — |
+| `git switch yeni-funksiyana` | Yeni komanda (2026 tövsiyə) | ən yaxşı |
+| `git checkout -b yeni-funksiyana` | Yarat + switch | ən çox |
+| `git merge xususiyyət-qolu` | Merge et | — |
 | `git rebase main` | Rebase (təmiz tarixçə) | — |
 | `git stash` | Dəyişiklikləri müvəqqəti saxla | — |
 | `git stash pop` | Geri qaytar | — |
